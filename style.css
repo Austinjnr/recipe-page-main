@@ -1,126 +1,127 @@
 body {
-  margin: 0;
-  padding: 40px;
-  background-color: hsl(0, 0%, 100%);
-}
-.header {
+  background-color: hsl(30, 54%, 90%);
+  margin: 70px 100px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  align-items: center;
 }
-.header img {
-  border-radius: 10px;
-  height: 500px;
-  object-fit: cover;
-  margin-bottom: 25px;
-}
-.header-text h1 {
-  font-family: Young Serif;
-  font-weight: 400;
-  margin-top: 0;
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 650px;
+  border-radius: 6px;
+  padding: 30px;
   margin-bottom: 20px;
 }
-.header-text p {
-  font-family: Outfit;
-  font-size: 16px;
-  line-height: 30px;
-  margin-top: 0;
+header {
+  height: 230px;
+  margin-bottom: 25px;
+}
+header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.section-1, .section-2, .section-3, .section-4 {
+  margin-bottom: 30px;
+}
+.section-1 h1 {
+  font-family: Young serif;
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+  margin-top: 5px;
   margin-bottom: 0;
 }
-.preparation-time {
+.section-1 p {
+  font-family: Outfit;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.section-2 {
+  font-family: Outfit;
   background-color: hsl(330, 100%, 98%);
-  font-family: Outfit;
-  font-size: 16px;
-  padding: 20px 40px;
-  margin-bottom: 25px;
+  border-radius: 8px;
+  padding: 10px 30px;
 }
-.preparation-time h2 {
-  color: hsl(332, 51%, 32%);
+.section-2 p {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 600;
-}
-.preparation-time-list li {
-  font-size: 12px;
   color: hsl(332, 51%, 32%);
-  margin-bottom: 8px;
-}
-.preparation-head {
-  font-size: 16px;
-  color: hsl(24, 5%, 18%);
   font-weight: 600;
-  margin-left: 15px;
-}
-.preparation-content {
-  color: hsl(24, 5%, 18%);
   font-size: 16px;
 }
-.ingredients {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: hsl(30, 18%, 87%);
-  margin-bottom: 25px;
-  padding-bottom: 10px;
-}
-.ingredients h3 {
-  color: hsl(14, 45%, 36%);
-  font-family: Young Serif;
-  font-weight: 400;
-}
-.ingredients-list-content {
-  color: hsl(14, 45%, 36%);
-  padding-left: 20px;
-  font-size: 12px;
-}
-.list {
-  margin-bottom: 15px;
-}
-.list p {
-  color: hsl(24, 5%, 18%);
+.section-2-list, .section-3-list, .section-4-list {
+  padding-left: 25px;
   font-size: 16px;
-  margin-left: 10px;
 }
-.instructions {
-  font-family: Young Serif;
-  margin-bottom: 25px;
+.section-2-list li, .section-3-list li, .section-4-list li {
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 10px;
+  padding-left: 15px;
 }
-.instructions h4 {
-  color: hsl(14, 45%, 36%);
+.section-2-list li::marker {
+  color: hsl(332, 51%, 32%);
+  font-size: 10px;
+}
+.section-3 {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 15px;
+}
+.section-3 h2, .section-4 h2, .section-5 h2 {
+  font-family: Young serif;
   font-weight: 400;
-  font-size: 20px;
-}
-.instructions-list {
-  font-family: Outfit;
-  padding-left: 20px;
-}
-.instructions-list  li::marker {
   color: hsl(14, 45%, 36%);
-}
-.instructions-list li {
-  font-weight: 600;
-  padding-left: 20px;
-}
-.instructions-list li  p{
-  color: hsl(24, 5%, 18%);
-}
-.instructions-text {
-  font-weight: 400;
-  color: hsl(24, 5%, 18%);
-}
-.nutrition {
   margin-top: 0;
   margin-bottom: 0;
 }
-.nutrition  h4 {
+.section-3-list li::marker {
+  color: hsl(14, 45%, 36%);
+  font-size: 10px;
+}
+.section-5 p {
+  font-family: Outfit;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.section-4-list {
+  font-family: Outfit;
+  font-size: 16px;
+}
+.section-4-list li::marker{
+  color: hsl(14, 45%, 36%);
+}
+table  {
+  font-family: Outfit;
+  width: 100%;
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 1px solid hsl(30, 10%, 34%);
+}
+.last-row {
+  border: none;
+}
+.table-content  {
+  color: hsl(30, 10%, 34%);
+  padding-left: 20px;
+}
+.table-content-unit {
   color: hsl(14, 45%, 36%);
   font-weight: 600;
-  font-size: 20px;
 }
-
+.table-content, .table-content-unit {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .attribution {
   font-size: 11px;
-  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* responsive design */
