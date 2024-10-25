@@ -1,6 +1,6 @@
 body {
   background-color: hsl(30, 54%, 90%);
-  margin: 70px 100px;
+  padding: 90px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,11 +13,10 @@ main {
   margin-bottom: 20px;
 }
 header {
-  height: 230px;
+  height: auto;
   margin-bottom: 25px;
 }
 header img {
-  height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
@@ -125,3 +124,35 @@ tr {
 }
 
 /* responsive design */
+@media (max-width: 760px) {
+  body {
+    padding: 20px 0;
+  }
+  main {
+    width: auto;
+    padding: 0;
+  }
+  header img {
+    height: auto;
+    width: 100%;
+  }
+  article {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+  main {
+    width: auto;
+    padding: 0;
+  }
+  header img {
+    height: auto;
+    width: 100%;
+  }
+  article {
+    padding: 0 30px;
+  }
+}
